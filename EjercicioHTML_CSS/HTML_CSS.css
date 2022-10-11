@@ -1,9 +1,21 @@
+/*Para todos*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Encabezado*/
+h1 {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
 /* Pantalla grande */
 @media(min-width: 992px) {
     .col-lg-4 {
-        background-color: beige;
         float: left;
-        border: 1px solid black;
+        padding: 1%;
     }
 
     .col-lg-4 {
@@ -13,29 +25,41 @@
 
 /* Modo Tablet */
 @media(min-width: 768px) and (max-width: 991px) {
-    .col-mg-6 {
-        background-color: beige;
+
+    .col-mg-6,
+    .col-mg-12 {
         float: left;
-        border: 1px solid black;
+        padding: 1%;
     }
 
     .col-mg-6 {
         width: 50%;
+    }
+
+    .col-mg-12 {
+        width: 100%;
+    }
+    .Recuadro2 {
+        width: 95%;
+        height: 100%;
     }
 }
 
 /* Modo móvil */
 @media(max-width: 767px) {
     .col-sg-12 {
-        background-color: beige;
         float: left;
-        border: 1px solid black;
+        padding: 1%;
     }
 
     .col-sg-12 {
         width: 100%;
     }
-}
+    .Recuadro2 {
+        width: 90%;
+        height: 100%;
+    }
+    }
 
 /*Columnas */
 .row {
@@ -47,7 +71,7 @@
     border: 1px solid black;
     background-color: lavender;
     width: 33.33%;
-    height: 10%;
+    height: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: 0px;
@@ -58,4 +82,27 @@
 /*Texto*/
 .Texto {
     font-family: 'Times New Roman', Times, serif;
+}
+
+/*Recuadro*/
+.Recuadro {
+    position: relative;
+    border: 2px solid black;
+    background-color: azure;
+    width: 90%;
+    height: 100%;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Recuadro2 {
+    position: relative;
+    border: 2px solid black;
+    background-color: azure;       
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
